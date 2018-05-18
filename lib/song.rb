@@ -11,6 +11,8 @@ class Song
     @@count 
   end 
   
+  def count 
+  
   
   
 end 
