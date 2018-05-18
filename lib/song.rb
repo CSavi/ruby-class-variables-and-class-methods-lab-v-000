@@ -12,16 +12,16 @@ class Song
       @@genres.uniq!
     end 
     
-    def self.genre_count
-      genre_count_hash = {}
-      @@genres.each do |genre|
+    def self.genre_count    #Histogram   
+      genre_count = {}       
+      @@genres.each do |genre|  #iterate over @@genres array
         if genre_count[genre] 
           genre_count += 1
         else
           genre_count = 1  
         end  
       end   
-      genre_count_hash << genre_count 
+      genre_count 
     end
   
   @@artists = []
