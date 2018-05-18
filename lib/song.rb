@@ -11,7 +11,7 @@ class Song
     @artist = artist 
     @genre = genre 
     @@count += 1
-    @@genres 
+    @@genres.uniq! 
   end 
   
   def self.count 
@@ -19,7 +19,7 @@ class Song
   end   
   
   def self.genres 
-    @@genres.collect {|x| x.uniq}
+    @@genres
   end   
   
 end 
