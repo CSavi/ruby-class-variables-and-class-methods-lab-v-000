@@ -19,7 +19,7 @@ class Song
   end   
   
   def self.genres 
-    @@genres.uniq!
+    @@genres.each {|x| x.uniq}
   end   
   
 end 
