@@ -19,7 +19,7 @@ class Song
   end   
   
   def self.genres 
-    @@genres.each {|x| x.uniq}
+    @@genres.collect {|x| x.uniq}
   end   
   
 end 
